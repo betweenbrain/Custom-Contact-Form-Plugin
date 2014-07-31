@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="loggedin">
+		<fieldset name="registered" label="PLG_CONTENT_CONTACTFORM_FIELDSET2_LABEL">
+			<field name="callback" type="radio" label="PLG_CONTENT_CONTACTFORM_FIELD_CALLBACK_LABEL" description="PLG_CONTENT_CONTACTFORM_FIELD_CALLBACK_DESC">
+				<option value="1">JYES</option>
+				<option value="2">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

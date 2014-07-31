@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="content" method="upgrade">
+	<author>Matt Thomas</author>
+	<authorEmail>matt@betweenbrain.com</authorEmail>
+	<authorUrl>http://betweenbrain.com</authorUrl>
+	<copyright>(C) 2014 betweenbrain llc. All rights reserved.</copyright>
+	<creationDate>July 24, 2014</creationDate>
+	<description>PLG_CONTENT_CUSTOMCONTACTFORM_DESC</description>
+	<license>GNU/GPL v2 or later</license>
+	<name>plg_content_customcontactform</name>
+	<version>1.0</version>
+
+	<files>
+		<filename plugin="customcontactform">customcontactform.php</filename>
+		<folder>forms</folder>
+		<folder>language</folder>
+	</files>
+
+</extension>

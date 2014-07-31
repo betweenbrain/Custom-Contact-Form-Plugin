@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="guest">
+		<fieldset name="guests" label="PLG_CONTENT_CONTACTFORM_FIELDSET1_LABEL">
+			<field name="heard" type="list" label="PLG_CONTENT_CONTACTFORM_FIELD_HEARD_LABEL" description="PLG_CONTENT_CONTACTFORM_FIELD_HEARD_DESC">
+				<option value="1">JSELECT</option>
+				<option value="1">HEARD_FRIEND</option>
+				<option value="2">HEARD_SEARCH</option>
+				<option value="3">HEARD_AD</option>
+				<option value="4">HEARD_OTHER</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>
