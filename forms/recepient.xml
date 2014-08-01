@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="guest">
+		<fieldset
+				addfieldpath="/plugins/content/customcontactform/elements"
+				name="recepients"
+				label="PLG_CONTENT_CONTACTFORM_FIELDSET1_LABEL">
+			<field
+					name="heard"
+					type="recepients"
+					label="PLG_CONTENT_CONTACTFORM_FIELD_HEARD_LABEL"
+					description="PLG_CONTENT_CONTACTFORM_FIELD_HEARD_DESC">
+			</field>
+		</fieldset>
+	</fields>
+</form>

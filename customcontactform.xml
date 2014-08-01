@@ -12,6 +12,7 @@
 
 	<files>
 		<filename plugin="customcontactform">customcontactform.php</filename>
+		<folder>elements</folder>
 		<folder>forms</folder>
 		<folder>language</folder>
 	</files>

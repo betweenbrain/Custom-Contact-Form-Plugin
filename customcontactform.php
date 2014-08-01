@@ -48,18 +48,7 @@ class plgContentCustomcontactform extends JPlugin
 		JForm::addFormPath(dirname(__FILE__) . '/forms');
 		$user = JFactory::getUser();
 
-		// Only for guests
-		if ($user->guest)
-		{
-			$form->loadFile('guest', false);
-		}
-		// Only registered users
-		else
-		{
-			$form->loadFile('user', false);
-		}
-		// All visitors
-		$form->loadFile('visitor', false);
+		$form->loadFile('recepient', false);
 
 		return true;
 	}
