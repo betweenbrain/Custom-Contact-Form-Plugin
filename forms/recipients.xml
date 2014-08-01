@@ -3,13 +3,12 @@
 	<fields name="guest">
 		<fieldset
 				addfieldpath="/plugins/content/customcontactform/elements"
-				name="recepients"
-				label="PLG_CONTENT_CONTACTFORM_FIELDSET1_LABEL">
+				name="recipients" >
 			<field
 					name="heard"
-					type="recepients"
-					label="PLG_CONTENT_CONTACTFORM_FIELD_HEARD_LABEL"
-					description="PLG_CONTENT_CONTACTFORM_FIELD_HEARD_DESC">
+					type="recipients"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC">
 			</field>
 		</fieldset>
 	</fields>
