@@ -7,6 +7,8 @@
 			<field
 					name="recipients"
 					type="recipients"
+					required="true"
+					labelclass="recipients"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC">
 			</field>
