@@ -24,8 +24,8 @@
 				       type="contacts"
 				       multiple="multiple"
 				       default=""
-				       label="PLG_DYNAMIC_BODY_CLASS_FEED_LABEL"
-				       description="PLG_DYNAMIC_BODY_CLASS_FEED_DESC" />
+				       label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_CONTACTS_LABEL"
+				       description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_CONTACTS_DESC" />
 			</fieldset>
 		</fields>
 	</config>
