@@ -7,7 +7,7 @@
 			<field
 					name="recipients"
 					type="recipients"
-					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC">
 			</field>
 		</fieldset>
