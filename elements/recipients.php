@@ -16,14 +16,17 @@ class JFormFieldRecipients extends JFormFieldList
 
 	protected $type = 'Recipients';
 
-	protected function getOptions()
+	public function getOptions()
 	{
-		// Create an array for our options
-		$options = array();
 
-		// Add our options to the array
-		$options[] = array("value" => 1, "text" => "1");
-		$options[] = array("value" => 2, "text" => "2");
+		$plugin = JPluginHelper::getPlugin('content', 'customcontactform');
+		$params = new JRegistry($plugin->params);
+
+		foreach ($params->get('contacts') as $contact) :
+			$parts     = explode(':', $contact);
+			$name      = ucwords(str_replace('-', ' ', $parts[1]));
+			$options[] = JHTML::_('select.option', $contact, $name);
+		endforeach;
 
 		return $options;
 	}
