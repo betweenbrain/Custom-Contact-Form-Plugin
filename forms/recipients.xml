@@ -3,7 +3,7 @@
 	<fields>
 		<fieldset
 				addfieldpath="/plugins/content/customcontactform/elements"
-				name="recipients" >
+				name="recipients">
 			<field
 					name="recipients"
 					type="recipients"
@@ -11,6 +11,40 @@
 					labelclass="recipients"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC">
+			</field>
+		</fieldset>
+		<fieldset
+				name="other">
+			<field
+					name="brand"
+					type="list"
+					default=""
+					labelclass="recipients"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_BRAND_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_BRAND_DESC">
+
+				<option value="">Please select</option>
+				<option value="KAYE Validation and Environmental Monitoring">KAYE Validation and Environmental Monitoring</option>
+				<option value="Protimeter">Protimeter Moisture Sensors</option>
+				<option value="Thermometrics">Thermometrics Temperature Sensors</option>
+				<option value="Nova Sensor">Nova Sensor MEMS Pressure Sensor</option>
+				<option value="Telaire">Telaire CO2 Transmitrters and Modules</option>
+			</field>
+			<field
+					name="solutions"
+					type="list"
+					default=""
+					labelclass="recipients"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_SOLUTIONS_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_SOLUTIONS_DESC">
+
+				<option value="">Please select</option>
+				<option value="CO2 Transmitters and Modules">CO2 Transmitters and Modules</option>
+				<option value="MEMS Pressure Sensors">MEMS Pressure Sensors</option>
+				<option value="Moisture Meters">Moisture Meters</option>
+				<option value="Temperature Sensors">Temperature Sensors</option>
+				<option value="Thermal Validation and Environmental Monitoring">Thermal Validation and Environmental Monitoring</option>
+				<option value="Services and all other inquiries">Services and all other inquiries</option>
 			</field>
 		</fieldset>
 	</fields>
