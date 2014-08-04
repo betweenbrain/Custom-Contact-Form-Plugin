@@ -19,6 +19,8 @@
 class plgContentCustomcontactform extends JPlugin
 {
 
+	protected $autoloadLanguage = true;
+
 	function __construct(&$subject, $params)
 	{
 		parent::__construct($subject, $params);
@@ -38,10 +40,6 @@ class plgContentCustomcontactform extends JPlugin
 	{
 
 		$this->addScripts();
-
-		// Load content_contactform plugin language
-		$lang = JFactory::getLanguage();
-		$lang->load('plg_content_customcontactform', JPATH_ADMINISTRATOR);
 
 		if (!($form instanceof JForm))
 		{
