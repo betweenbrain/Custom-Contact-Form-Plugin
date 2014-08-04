@@ -16,11 +16,18 @@ class JFormFieldRecipients extends JFormFieldList
 
 	protected $type = 'Recipients';
 
+	/**
+	 * Get select options
+	 *
+	 * @return array
+	 */
 	public function getOptions()
 	{
 
 		$plugin = JPluginHelper::getPlugin('content', 'customcontactform');
 		$params = new JRegistry($plugin->params);
+
+		$options[] = JHTML::_('select.option', '', '');
 
 		foreach ($params->get('contacts') as $contact) :
 			$parts     = explode(':', $contact);
