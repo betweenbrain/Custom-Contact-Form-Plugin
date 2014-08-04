@@ -5,7 +5,7 @@
 				addfieldpath="/plugins/content/customcontactform/elements"
 				name="recipients" >
 			<field
-					name="heard"
+					name="recipients"
 					type="recipients"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC">
