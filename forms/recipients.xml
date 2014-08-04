@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields>
+		<fieldset
+				addfieldpath="/plugins/content/customcontactform/elements"
+				name="recipients" >
+			<field
+					name="recipients"
+					type="recipients"
+					required="true"
+					labelclass="recipients"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC">
+			</field>
+		</fieldset>
+	</fields>
+</form>

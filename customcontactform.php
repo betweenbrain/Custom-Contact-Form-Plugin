@@ -18,6 +18,17 @@
  */
 class plgContentCustomcontactform extends JPlugin
 {
+
+	protected $autoloadLanguage = true;
+
+	function __construct(&$subject, $params)
+	{
+		parent::__construct($subject, $params);
+		$this->app = JFactory::getApplication();
+		$this->db  = JFactory::getDbo();
+		$this->doc = JFactory::getDocument();
+	}
+
 	/**
 	 * @param JForm $form The form to be altered.
 	 * @param array $data The associated data for the form.
@@ -27,9 +38,8 @@ class plgContentCustomcontactform extends JPlugin
 	 */
 	function onContentPrepareForm($form, $data)
 	{
-		// Load content_contactform plugin language
-		$lang = JFactory::getLanguage();
-		$lang->load('plg_content_customcontactform', JPATH_ADMINISTRATOR);
+
+		$this->addScripts();
 
 		if (!($form instanceof JForm))
 		{
@@ -46,21 +56,31 @@ class plgContentCustomcontactform extends JPlugin
 
 		// Add the fields to the form.
 		JForm::addFormPath(dirname(__FILE__) . '/forms');
-		$user = JFactory::getUser();
 
-		// Only for guests
-		if ($user->guest)
-		{
-			$form->loadFile('guest', false);
-		}
-		// Only registered users
-		else
-		{
-			$form->loadFile('user', false);
-		}
-		// All visitors
-		$form->loadFile('visitor', false);
+		$form->loadFile('recipients', false);
 
 		return true;
+	}
+
+	/**
+	 * Adds scripts to the page
+	 *
+	 * @return null
+	 */
+	private function addScripts()
+	{
+
+		$js = "<script type=\"text/javascript\">
+	(function ($) {
+		$(document).ready(function() {
+			$('#jform_recipients').change( function () {
+				var recipient = $('#jform_recipients option:selected').val();
+				$('input[name=id]').val(recipient);
+			});
+		});
+	})(jQuery)
+</script>";
+
+		$this->doc->addCustomTag($js);
 	}
 }
