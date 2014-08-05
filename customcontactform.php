@@ -38,9 +38,6 @@ class plgContentCustomcontactform extends JPlugin
 	 */
 	function onContentPrepareForm($form, $data)
 	{
-
-		$this->addScripts();
-
 		if (!($form instanceof JForm))
 		{
 			$this->_subject->setError('JERROR_NOT_A_FORM');
@@ -63,24 +60,10 @@ class plgContentCustomcontactform extends JPlugin
 	}
 
 	/**
-	 * Adds scripts to the page
-	 *
-	 * @return null
+	 * Defer loading of JS until later in the execution cycle
 	 */
-	private function addScripts()
+	function onBeforeRender()
 	{
-
-		$js = "<script type=\"text/javascript\">
-	(function ($) {
-		$(document).ready(function() {
-			$('#jform_recipients').change( function () {
-				var recipient = $('#jform_recipients option:selected').val();
-				$('input[name=id]').val(recipient);
-			});
-		});
-	})(jQuery)
-</script>";
-
-		$this->doc->addCustomTag($js);
+		$this->doc->addScript(JURI::base(true) . '/media/plg_customcontactform/js/form-actions.min.js');
 	}
 }
