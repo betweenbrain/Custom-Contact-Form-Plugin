@@ -17,6 +17,10 @@
 		<folder>language</folder>
 	</files>
 
+	<media folder="media" destination="plg_customcontactform">
+		<folder>js</folder>
+	</media>
+
 	<config>
 		<fields name="params">
 			<fieldset name="basic" addfieldpath="/plugins/content/customcontactform/elements">
