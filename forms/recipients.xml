@@ -16,8 +16,8 @@
 			<field
 					name="telephone"
 					type="tel"
-					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_TELPHONE_LABEL"
-					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_TELPHONE_DESC" />
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_TELEPHONE_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_TELEPHONE_DESC" />
 			<field
 					name="company"
 					type="text"
