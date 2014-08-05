@@ -54,7 +54,7 @@ class plgContentCustomcontactform extends JPlugin
 		// Add the fields to the form.
 		JForm::addFormPath(dirname(__FILE__) . '/forms');
 
-		$form->loadFile('recipients', false);
+		$form->loadFile('custom', false);
 
 		return true;
 	}

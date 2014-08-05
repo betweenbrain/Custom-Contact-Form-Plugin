@@ -2,7 +2,7 @@
 <form>
 	<fields addfieldpath="/plugins/content/customcontactform/elements">
 		<fieldset
-				name="recipients">
+				name="custom">
 			<field
 					name="recipients"
 					type="recipients"
@@ -10,9 +10,6 @@
 					labelclass="recipients"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC" />
-		</fieldset>
-		<fieldset
-				name="contactInfo">
 			<field
 					name="telephone"
 					type="tel"
