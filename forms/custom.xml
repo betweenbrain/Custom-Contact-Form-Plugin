@@ -54,9 +54,13 @@
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_STATE_DESC">
 				<option value="">State</option>
 				<option value="Other">Other</option>
-
 			</field>
 
+			<field
+					name="zip"
+					type="text"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ZIP_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ZIP_DESC" />
 		</fieldset>
 		<fieldset
 				name="other">
