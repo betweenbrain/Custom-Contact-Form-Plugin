@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
-	<fields>
+	<fields addfieldpath="/plugins/content/customcontactform/elements">
 		<fieldset
-				addfieldpath="/plugins/content/customcontactform/elements"
 				name="recipients">
 			<field
 					name="recipients"
@@ -10,8 +9,57 @@
 					required="true"
 					labelclass="recipients"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_LABEL"
-					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC">
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC" />
+		</fieldset>
+		<fieldset
+				name="contactInfo">
+			<field
+					name="telephone"
+					type="tel"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_TELPHONE_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_TELPHONE_DESC" />
+			<field
+					name="company"
+					type="text"
+					required="true"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_COMPANY_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_COMPANY_DESC" />
+			<field
+					name="address1"
+					type="text"
+					required="true"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ADDRESS1_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ADDRESS1_DESC" />
+			<field
+					name="address2"
+					type="text"
+					required="true"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ADDRESS2_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ADDRESS2_DESC" />
+			<field
+					name="city"
+					type="text"
+					required="true"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_CITY_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_CITY_DESC" />
+			<field
+					name="country"
+					type="country"
+					required="true"
+					labelclass="recipients"
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_COUNTRY_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_COUNTRY_DESC" />
+			<field
+					name="state"
+					type="list"
+					default=""
+					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_STATE_LABEL"
+					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_STATE_DESC">
+				<option value="">State</option>
+				<option value="Other">Other</option>
+
 			</field>
+
 		</fieldset>
 		<fieldset
 				name="other">
