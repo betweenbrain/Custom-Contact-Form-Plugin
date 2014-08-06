@@ -38,6 +38,11 @@ class plgContentCustomcontactform extends JPlugin
 	 */
 	function onContentPrepareForm($form, $data)
 	{
+		if ($this->app->isAdmin())
+		{
+			return;
+		}
+
 		if (!($form instanceof JForm))
 		{
 			$this->_subject->setError('JERROR_NOT_A_FORM');
