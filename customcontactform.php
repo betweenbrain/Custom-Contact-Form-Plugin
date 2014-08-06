@@ -38,6 +38,11 @@ class plgContentCustomcontactform extends JPlugin
 	 */
 	function onContentPrepareForm($form, $data)
 	{
+		// Exit if an admin form
+		if ($this->app->isAdmin())
+		{
+			return;
+		}
 
 		$this->addScripts();
 
