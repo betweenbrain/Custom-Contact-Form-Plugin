@@ -1,46 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
-	<fields addfieldpath="/plugins/content/customcontactform/elements">
+	<fields
+			name="customfields"
+			addfieldpath="/plugins/content/customcontactform/elements">
 		<fieldset
 				name="custom">
 			<field
 					name="recipients"
 					type="recipients"
+					id="recipients"
 					required="true"
 					labelclass="recipients"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC" />
 			<field
 					name="telephone"
+					id="telephone"
 					type="tel"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_TELEPHONE_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_TELEPHONE_DESC" />
 			<field
 					name="company"
+					id="company"
 					type="text"
 					required="true"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_COMPANY_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_COMPANY_DESC" />
 			<field
 					name="address1"
+					id="address1"
 					type="text"
 					required="true"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ADDRESS1_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ADDRESS1_DESC" />
 			<field
 					name="address2"
+					id="address2"
 					type="text"
-					required="true"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ADDRESS2_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ADDRESS2_DESC" />
 			<field
 					name="city"
+					id="city"
 					type="text"
 					required="true"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_CITY_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_CITY_DESC" />
 			<field
 					name="country"
+					id="country"
 					type="country"
 					required="true"
 					labelclass="recipients"
@@ -48,6 +56,7 @@
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_COUNTRY_DESC" />
 			<field
 					name="state"
+					id="state"
 					type="list"
 					default=""
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_STATE_LABEL"
@@ -58,6 +67,7 @@
 
 			<field
 					name="zip"
+					id="zip"
 					type="text"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ZIP_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_ZIP_DESC" />
@@ -66,6 +76,7 @@
 				name="other">
 			<field
 					name="brand"
+					id="brand"
 					type="list"
 					default=""
 					labelclass="recipients"
@@ -81,6 +92,7 @@
 			</field>
 			<field
 					name="solutions"
+					id="solutions"
 					type="list"
 					default=""
 					labelclass="recipients"
