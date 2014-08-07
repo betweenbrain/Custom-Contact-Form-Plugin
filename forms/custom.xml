@@ -51,7 +51,6 @@
 					id="country"
 					type="country"
 					required="true"
-					labelclass="recipients"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_COUNTRY_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_COUNTRY_DESC" />
 			<field
