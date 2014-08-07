@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
-	<fields>
+	<fields
+			name="custom">
 		<fieldset
 				addfieldpath="/plugins/content/customcontactform/elements"
 				name="recipients" >
