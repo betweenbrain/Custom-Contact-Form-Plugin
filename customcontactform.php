@@ -62,7 +62,7 @@ class plgContentCustomcontactform extends JPlugin
 		// Add the fields to the form.
 		JForm::addFormPath(dirname(__FILE__) . '/forms');
 
-		$form->loadFile('recipients', false);
+		$form->loadFile('customform', false);
 
 		return true;
 	}
@@ -78,8 +78,8 @@ class plgContentCustomcontactform extends JPlugin
 		$js = "<script type=\"text/javascript\">
 	(function ($) {
 		$(document).ready(function() {
-			$('#jform_recipients').change( function () {
-				var recipient = $('#jform_recipients option:selected').val();
+			$('#recipients-input').change( function () {
+				var recipient = $('#recipients-input option:selected').val();
 				$('input[name=id]').val(recipient);
 			});
 		});

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
 	<fields
-			name="custom">
+			name="customfields">
 		<fieldset
 				addfieldpath="/plugins/content/customcontactform/elements"
-				name="recipients" >
+				name="customfieldset" >
 			<field
 					name="recipients"
 					type="recipients"
+					id="recipients-input"
 					required="true"
 					labelclass="recipients"
+					validate="options"
 					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_LABEL"
 					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC">
 			</field>
