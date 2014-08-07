@@ -25,8 +25,6 @@ class plgContentCustomcontactform extends JPlugin
 	{
 		parent::__construct($subject, $params);
 		$this->app = JFactory::getApplication();
-		$this->db  = JFactory::getDbo();
-		$this->doc = JFactory::getDocument();
 	}
 
 	/**
@@ -44,8 +42,6 @@ class plgContentCustomcontactform extends JPlugin
 			return;
 		}
 
-		$this->addScripts();
-
 		if (!($form instanceof JForm))
 		{
 			$this->_subject->setError('JERROR_NOT_A_FORM');
@@ -59,33 +55,14 @@ class plgContentCustomcontactform extends JPlugin
 			return true;
 		}
 
+		// Remove the subject field from the form object
+		$form->removeField('contact_subject');
+
 		// Add the fields to the form.
 		JForm::addFormPath(dirname(__FILE__) . '/forms');
 
 		$form->loadFile('customform', false);
 
 		return true;
-	}
-
-	/**
-	 * Adds scripts to the page
-	 *
-	 * @return null
-	 */
-	private function addScripts()
-	{
-
-		$js = "<script type=\"text/javascript\">
-	(function ($) {
-		$(document).ready(function() {
-			$('#recipients-input').change( function () {
-				var recipient = $('#recipients-input option:selected').val();
-				$('input[name=id]').val(recipient);
-			});
-		});
-	})(jQuery)
-</script>";
-
-		$this->doc->addCustomTag($js);
 	}
 }

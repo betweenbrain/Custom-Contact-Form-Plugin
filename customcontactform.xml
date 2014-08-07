@@ -12,22 +12,8 @@
 
 	<files>
 		<filename plugin="customcontactform">customcontactform.php</filename>
-		<folder>elements</folder>
 		<folder>forms</folder>
 		<folder>language</folder>
 	</files>
-
-	<config>
-		<fields name="params">
-			<fieldset name="basic" addfieldpath="/plugins/content/customcontactform/elements">
-				<field name="contacts"
-				       type="contacts"
-				       multiple="multiple"
-				       default=""
-				       label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_CONTACTS_LABEL"
-				       description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_CONTACTS_DESC" />
-			</fieldset>
-		</fields>
-	</config>
 
 </extension>
