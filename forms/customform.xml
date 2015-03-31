@@ -3,18 +3,47 @@
 	<fields
 			name="customfields">
 		<fieldset
-				addfieldpath="/plugins/content/customcontactform/elements"
-				name="customfieldset" >
-			<field
-					name="recipients"
-					type="recipients"
-					id="recipients-input"
-					required="true"
-					labelclass="recipients"
-					validate="options"
-					label="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_LABEL"
-					description="PLG_CONTENT_CUSTOMCONTACTFORM_FIELD_RECIPIENT_DESC">
-			</field>
+				name="customfieldset">
+			<field name="company"
+			       type="text"
+			       id="contact-company"
+			       class="form-control"
+			       size="30"
+			       label="PLG_CONTENT_CUSTOMCONTACTFORMS_FIELD_COMPANY"
+			       filter="string"
+					/>
+			<field name="street"
+			       type="text"
+			       id="contact-street"
+			       class="form-control"
+			       size="30"
+			       label="PLG_CONTENT_CUSTOMCONTACTFORMS_FIELD_STREET"
+			       filter="string"
+					/>
+			<field name="city"
+			       type="text"
+			       id="contact-city"
+			       class="form-control"
+			       size="30"
+			       label="PLG_CONTENT_CUSTOMCONTACTFORMS_FIELD_CITY"
+			       filter="string"
+					/>
+			<field name="zip"
+			       type="text"
+			       id="contact-zip"
+			       class="form-control"
+			       size="10"
+			       label="PLG_CONTENT_CUSTOMCONTACTFORMS_FIELD_ZIP"
+			       filter="string"
+					/>
+			<field name="country"
+			       type="text"
+			       id="contact-country"
+			       class="form-control"
+			       size="30"
+			       label="PLG_CONTENT_CUSTOMCONTACTFORMS_FIELD_COUNTRY"
+			       filter="string"
+					/>
 		</fieldset>
 	</fields>
 </form>

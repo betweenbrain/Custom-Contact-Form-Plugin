@@ -44,8 +44,6 @@ class plgContentCustomcontactform extends JPlugin
 			return;
 		}
 
-		$this->addScripts();
-
 		if (!($form instanceof JForm))
 		{
 			$this->_subject->setError('JERROR_NOT_A_FORM');
@@ -67,25 +65,4 @@ class plgContentCustomcontactform extends JPlugin
 		return true;
 	}
 
-	/**
-	 * Adds scripts to the page
-	 *
-	 * @return null
-	 */
-	private function addScripts()
-	{
-
-		$js = "<script type=\"text/javascript\">
-	(function ($) {
-		$(document).ready(function() {
-			$('#recipients-input').change( function () {
-				var recipient = $('#recipients-input option:selected').val();
-				$('input[name=id]').val(recipient);
-			});
-		});
-	})(jQuery)
-</script>";
-
-		$this->doc->addCustomTag($js);
-	}
 }
